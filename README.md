@@ -21,7 +21,7 @@ In modern football analytics, understanding the factors that drive team success 
 - Tactical Planning and Recruitment Strategy
 
 ## Article
-[![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/blob/main/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
+[![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/blob/master/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
 
 ## Installation Instructions
 
