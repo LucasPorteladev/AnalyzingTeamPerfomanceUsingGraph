@@ -3,48 +3,48 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 while True:
     try:
-        # Solicitar o caminho do arquivo CSV de entrada
-        file_path = input("Digite o caminho do arquivo CSV (incluindo a extensão .csv): ").strip()
+        # Ask for the input CSV file path
+        file_path = input("Enter the CSV file path (including the .csv extension): ").strip()
         
-        # Carregar a planilha CSV
+        # Load the CSV spreadsheet
         data = pd.read_csv(file_path)
 
-        # Selecionar as colunas para normalizar (ignorando 'Jogador', 'Posicao', 'Idade')
+        # Select the columns to normalize (ignoring 'Player', 'Position', 'Age')
         columns_to_normalize = data.columns[3:]
         normalized_data = data.copy()
 
-        # Normalização (divisão pelo número de jogos)
+        # Normalization (dividing by the number of games)
         for col in columns_to_normalize:
-            if col != 'Jogos':  # Evitar dividir o próprio número de jogos
-                normalized_data[col] = data[col] / data['Jogos']
+            if col != 'Games':  # Avoid dividing by the number of games itself
+                normalized_data[col] = data[col] / data['Games']
 
-        # Tratar valores NaN após a normalização
-        normalized_data = normalized_data.fillna(0)  # Substituir NaN por 0
+        # Handle NaN values after normalization
+        normalized_data = normalized_data.fillna(0)  # Replace NaN with 0
 
-        # Selecionar apenas os dados numéricos para calcular a similaridade
-        numerical_data = normalized_data[columns_to_normalize].drop(columns=['Jogos'])
+        # Select only the numerical data to calculate similarity
+        numerical_data = normalized_data[columns_to_normalize].drop(columns=['Games'])
 
-        # Calcular a matriz de similaridade do cosseno
+        # Calculate the cosine similarity matrix
         similarity_matrix = cosine_similarity(numerical_data)
 
-        # Converter a matriz de similaridade em um DataFrame para melhor apresentação
+        # Convert the similarity matrix to a DataFrame for better presentation
         similarity_df = pd.DataFrame(
             similarity_matrix,
-            index=data['Jogador'],  # Nomes dos jogadores
-            columns=data['Jogador']  # Nomes dos jogadores
+            index=data['Player'],  # Player names
+            columns=data['Player']  # Player names
         )
 
-        # Solicitar o nome do arquivo para salvar a matriz de similaridade
-        output_file = input("Digite o nome do arquivo para salvar a matriz (incluindo a extensão .csv): ").strip()
+        # Ask for the output file name to save the similarity matrix
+        output_file = input("Enter the file name to save the matrix (including the .csv extension): ").strip()
         similarity_df.to_csv(output_file)
 
-        print(f"Matriz de similaridade salva com sucesso em '{output_file}'.")
+        print(f"Similarity matrix successfully saved to '{output_file}'.")
 
     except Exception as e:
-        print(f"Ocorreu um erro: {e}")
+        print(f"An error occurred: {e}")
 
-    # Perguntar ao usuário se deseja realizar outro cálculo
-    repeat = input("Deseja criar outra matriz de similaridade? (s/n): ").strip().lower()
-    if repeat != 's':
-        print("Encerrando o programa. Até a próxima!")
+    # Ask if the user wants to create another similarity matrix
+    repeat = input("Do you want to create another similarity matrix? (y/n): ").strip().lower()
+    if repeat != 'y':
+        print("Ending the program. See you next time!")
         break
