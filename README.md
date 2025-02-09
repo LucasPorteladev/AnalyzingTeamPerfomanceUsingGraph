@@ -1,5 +1,3 @@
-# AnalyzingTeamPerfomanceUsingGraph
-Analyzing Team Performance Using Graph Theory Metrics – This study applies graph theory to football analytics, modeling player similarity networks to identify structural differences between championship-winning and relegated teams in La Liga. Insights from centrality and connectivity metrics inform tactical planning and recruitment strategies.
 # Analyzing Team Performance Using Graph Theory Metrics
 
 This repository contains the research paper *"Analyzing Team Performance Using Graph Theory Metrics"*, which explores the application of graph theory in football analytics. The study investigates the structural differences between championship-winning and relegated teams in La Liga by constructing player similarity networks and applying various network metrics.
@@ -21,6 +19,9 @@ In modern football analytics, understanding the factors that drive team success 
 - Network Science in Team Cohesion
 - Centrality and Connectivity Metrics
 - Tactical Planning and Recruitment Strategy
+
+## Article
+[![📄 Article](https://img.shields.io/badge/📄-Ver%20Artigo-blue)](https://github.com/LucasPorteladev/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
 
 ## How to Cite
 
