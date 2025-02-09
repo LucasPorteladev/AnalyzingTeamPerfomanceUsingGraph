@@ -1,25 +1,25 @@
 import pandas as pd
 
-def process_planilha():
+def process_spreadsheet():
     while True:
-        # Perguntar ao usuário o nome do arquivo a ser aberto
-        file_path = input("Digite o nome do arquivo CSV que deseja abrir (com extensão): ")
+        # Ask the user for the name of the file to open
+        file_path = input("Enter the name of the CSV file you want to open (with extension): ")
 
         try:
-            # Carregar a matriz de similaridade a partir do arquivo CSV
+            # Load the similarity matrix from the CSV file
             data = pd.read_csv(file_path)
 
-            # Criar planilha de nós (Nodes)
+            # Create nodes spreadsheet
             nodes = pd.DataFrame({
-                "ID": range(len(data["Jogador"])),
-                "LABEL": data["Jogador"]
+                "ID": range(len(data["Player"])),
+                "LABEL": data["Player"]
             })
 
-            # Criar planilha de arestas (Edges)
+            # Create edges spreadsheet
             edges = []
             for i, row in data.iterrows():
                 for j, weight in enumerate(row[1:], start=1):
-                    if i < j:  # Evitar duplicação porque o grafo é não-direcionado
+                    if i < j:  # Avoid duplication since the graph is undirected
                         edges.append({
                             "SOURCE": i,
                             "TARGET": j - 1,
@@ -29,26 +29,26 @@ def process_planilha():
 
             edges_df = pd.DataFrame(edges)
 
-            # Perguntar os nomes dos arquivos de saída
-            nodes_file = input("Digite o nome do arquivo para salvar os nós (com extensão .csv): ")
-            edges_file = input("Digite o nome do arquivo para salvar as arestas (com extensão .csv): ")
+            # Ask for output file names
+            nodes_file = input("Enter the name of the file to save the nodes (with .csv extension): ")
+            edges_file = input("Enter the name of the file to save the edges (with .csv extension): ")
 
-            # Salvar as planilhas em arquivos CSV
+            # Save the spreadsheets as CSV files
             nodes.to_csv(nodes_file, index=False)
             edges_df.to_csv(edges_file, index=False)
 
-            print(f"As planilhas foram geradas com sucesso:")
-            print(f"- Planilha de Nós: {nodes_file}")
-            print(f"- Planilha de Arestas: {edges_file}")
+            print(f"The spreadsheets were successfully generated:")
+            print(f"- Nodes Spreadsheet: {nodes_file}")
+            print(f"- Edges Spreadsheet: {edges_file}")
 
         except Exception as e:
-            print(f"Erro ao processar o arquivo: {e}")
+            print(f"Error processing the file: {e}")
 
-        # Perguntar ao usuário se deseja processar outro arquivo
-        continue_process = input("Deseja processar outro arquivo? (s/n): ").strip().lower()
-        if continue_process != 's':
-            print("Processo encerrado.")
+        # Ask the user if they want to process another file
+        continue_process = input("Do you want to process another file? (y/n): ").strip().lower()
+        if continue_process != 'y':
+            print("Process terminated.")
             break
 
-# Chamar a função principal
-process_planilha()
+# Call the main function
+process_spreadsheet()
