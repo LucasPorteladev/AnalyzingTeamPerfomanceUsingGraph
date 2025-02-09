@@ -11,8 +11,8 @@ In modern football analytics, understanding the factors that drive team success 
 ## Contents
 
 - 📄 **Research Paper**: Full text of the paper in PDF format.
-- 📊 **Datasets**: (If applicable, include datasets used in the analysis)
-- 📎 **Code & Scripts**: (If applicable, include code for graph generation, network analysis, and data visualization)
+- 📊 **Datasets**: (Data used in the process and data visualization)
+- 📎 **Code & Scripts**: (If applicable, include code for graph generation)
 
 ## Key Topics
 
