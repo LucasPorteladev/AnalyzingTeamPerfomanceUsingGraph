@@ -23,6 +23,14 @@ In modern football analytics, understanding the factors that drive team success 
 ## Article
 [![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/blob/main/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
 
+## Installation Instructions
+
+To run the scripts in this repository, ensure you have the required Python libraries installed. You can install them using the following command:
+
+```sh
+pip install pandas scikit-learn requests beautifulsoup4
+```
+
 ## How to Cite
 
 If you use this research in your work, please cite it as:
