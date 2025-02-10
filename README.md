@@ -68,7 +68,7 @@ Replace the **team code** **team name** and **season year** in the URL to match 
 - **File Names**: Always use `.csv` extensions for the files generated and saved by each script.
 
 ## Article
-[![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/blob/master/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
+[![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/AnalyzingTeamPerfomanceUsingGraph/blob/master/Research%20Paper/Analyzing%20Team%20Perfomance%20Using%20Graph%20Theory%20Metrics.pdf)
 
 ## How to Cite
 
