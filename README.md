@@ -70,6 +70,14 @@ Replace the **team code** **team name** and **season year** in the URL to match 
 ## Article
 [![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/AnalyzingTeamPerfomanceUsingGraph/blob/master/Research%20Paper/Analyzing%20Team%20Perfomance%20Using%20Graph%20Theory%20Metrics.pdf)
 
+## Author
+
+**Lucas Portela**  
+[GitHub Profile](https://github.com/LucasPorteladev)  
+
+If you have any questions or would like to collaborate, feel free to reach out:  
+[Email Address](mailto:lucas.portela@aluno.cefetmg.br)
+
 ## How to Cite
 
 If you use this research in your work, please cite it as:
