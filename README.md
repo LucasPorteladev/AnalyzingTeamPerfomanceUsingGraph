@@ -20,6 +20,14 @@ In modern football analytics, understanding the factors that drive team success 
 - Centrality and Connectivity Metrics
 - Tactical Planning and Recruitment Strategy
 
+## Installation Instructions
+
+To run the scripts in this repository, ensure you have the required Python libraries installed. You can install them using the following command:
+
+```sh
+pip install pandas scikit-learn requests beautifulsoup4
+```
+
 ## How to Run
 
 ### 1. **Select the Team and Season**
@@ -31,7 +39,7 @@ In modern football analytics, understanding the factors that drive team success 
 https://fbref.com/pt/equipes/206d90db/2023-2024/Barcelona-Estatisticas
 ```
 
-Replace the **team name** and **season year** in the URL to match your selection.
+Replace the **team code** **team name** and **season year** in the URL to match your selection.
 
 ### 2. **Run `script.py`**
 
@@ -61,14 +69,6 @@ Replace the **team name** and **season year** in the URL to match your selection
 
 ## Article
 [![📄 Article](https://img.shields.io/badge/📄-Read%20Article-blue)](https://github.com/LucasPorteladev/blob/master/Research%20Paper/Analyzing%20Team%20Performance%20Using%20Graph%20Theory%20Metrics.pdf)
-
-## Installation Instructions
-
-To run the scripts in this repository, ensure you have the required Python libraries installed. You can install them using the following command:
-
-```sh
-pip install pandas scikit-learn requests beautifulsoup4
-```
 
 ## How to Cite
 
