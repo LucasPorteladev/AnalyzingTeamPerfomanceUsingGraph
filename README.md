@@ -10,7 +10,7 @@ In modern football analytics, understanding the factors that drive team success 
 
 - 📄 **Research Paper**: Full text of the paper in PDF format.
 - 📊 **Datasets**: (Data used in the process and data visualization)
-- 📎 **Code & Scripts**: (Codes used in the process)
+- 📎 **Scripts**: (Codes used in the process)
 
 ## Key Topics
 
